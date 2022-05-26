@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 
-export default function Timer() {
+export default function GoogleTimer() {
   const [sec, setsec] = useState(0);
   const [mint, setmint] = useState(0);
 
@@ -10,6 +10,7 @@ export default function Timer() {
   useEffect(() => {
     timer = setInterval(() => {
       setsec(sec + 1);
+      
       if (sec == 59) {
         setmint(mint + 1);
         setsec(0);
@@ -29,7 +30,7 @@ export default function Timer() {
 
   return (
     <>
-      <h1>Timer</h1>
+      <h1> Google Timer</h1>
       <h3>
         {mint < 10 ? "0" + mint : mint} : {sec < 10 ? "0" + sec : sec}
       </h3>
