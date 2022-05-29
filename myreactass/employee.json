@@ -1,0 +1,13 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "username": "ajay yadav",
+      "age": "18",
+      "address": "darbarpur",
+      "salary": "20000",
+      "op": "2",
+      "tnc": "true"
+    }
+  ]
+}
