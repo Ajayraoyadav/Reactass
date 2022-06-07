@@ -3,19 +3,21 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { CartContextProvider } from "./RCT-101.W3.A1 - Context API/contexts/CartContext";
 import { BrowserRouter } from "react-router-dom";
-
+import { AuthProvider } from "./RCT-101.W3.A1 - Context API/THEME CONTEXT/Mainass/Context/AuthProvider";
+import { ChakraProvider } from "@chakra-ui/react";
 //TODO: Import and Add ChakraProvider
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <CartContextProvider>
-      <App />
-    </CartContextProvider>
-    </BrowserRouter>
+    <ChakraProvider>
+      <AuthProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </AuthProvider>
+    </ChakraProvider>
   </React.StrictMode>
 );
 

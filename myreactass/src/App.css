@@ -1,3 +1,23 @@
 body{
     text-align: center;
 }
+.navch245{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+}
+.navch245>p{
+    padding: 10px;
+    border-radius: 5px;
+}
+.navch245>p:hover{
+    border: 3px solid grey;
+    color: black;
+    font-weight: 600;
+}
+.mainchnavbar345{
+    display: flex;
+    justify-content: space-between;
+}
