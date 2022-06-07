@@ -7,17 +7,20 @@ import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./RCT-101.W3.A1 - Context API/THEME CONTEXT/Mainass/Context/AuthProvider";
 import { ChakraProvider } from "@chakra-ui/react";
 //TODO: Import and Add ChakraProvider
+import AppContextProvider from "./AUTH CONTEXT/Context/AppContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ChakraProvider>
-      <AuthProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </AuthProvider>
-    </ChakraProvider>
+    <AppContextProvider>
+      {/* <ChakraProvider> */}
+        <AuthProvider>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </AuthProvider>
+      {/* </ChakraProvider> */}
+    </AppContextProvider>
   </React.StrictMode>
 );
 
