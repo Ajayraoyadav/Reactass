@@ -1,9 +1,9 @@
 import React from "react";
 import { useContext } from "react";
-import { ThemeContext } from "../../ThemeContext/ThemeProvider";
+import { ThemeContext } from "../../ThemeContext/ThemeContext";
 import styled from "styled-components";
 
-const Border = styled.h1`
+const Border = styled.div`
   margin: 10px;
   padding: 10px;
   border: 1px solid black;
@@ -12,10 +12,10 @@ const Border = styled.h1`
 `;
 
 export default function Navbars() {
-  const [theme, toggleTheme] = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <>
-      <Border color={theme}>
+      <Border >
         <h1>Navbar</h1>
         <div>{theme}</div>
         <button onClick={toggleTheme}>Toggle Theme</button>

@@ -21,3 +21,8 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.prid533{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
